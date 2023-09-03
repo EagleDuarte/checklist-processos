@@ -28,7 +28,8 @@
     max-height: 70vh; /* Define uma altura máxima de 60% da altura da viewport */
     overflow-y: auto; /* Adiciona uma barra de rolagem vertical caso o conteúdo ultrapasse a altura máxima */
     word-wrap: break-word; /* Quebre palavras longas */
-  }
+margin-bottom: 150px;
+}
 
 /* Estilos para telas de celular (máximo de 768px de largura) */
 @media screen and (max-width: 768px) {
@@ -40,6 +41,7 @@
         margin: 50px auto 10px; /* Ajusta a margem do .todo-app */
         padding: 20px 15px 40px; /* Ajusta o padding do .todo-app */
         position: center;
+        margin-bottom: 100px;
     }
 }
 
