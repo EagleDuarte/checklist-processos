@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(5deg, #055cff, #4860a0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+  }
+
+/* Estilos padrão para .todo-app */
+.todo-app {
+    background: #fff;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px;
+    padding: 2em 3em; /* Adjusted padding to center content better */
+    border-radius: 0.5em;
+    max-height: 70vh; /* Define uma altura máxima de 60% da altura da viewport */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical caso o conteúdo ultrapasse a altura máxima */
+    word-wrap: break-word; /* Quebre palavras longas */
+  }
+
+/* Estilos para telas de celular (máximo de 768px de largura) */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 5px; /* Reduz o padding do container */
+    }
+
+    .todo-app {
+        margin: 50px auto 10px; /* Ajusta a margem do .todo-app */
+        padding: 20px 15px 40px; /* Ajusta o padding do .todo-app */
+        position: center;
+    }
+}
+
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #055cff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(uncheckedd.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+/* Estilos para telas de celular (máximo de 768px de largura) */
+@media screen and (max-width: 768px) {
+    ul li {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+        padding: 10px 8px 10px 40px; /* Ajusta o padding */
+    }
+
+    ul li::before {
+        height: 20px; /* Reduz o tamanho do ícone de seleção */
+        width: 20px;
+        top: 10px;
+        left: 6px;
+    }
+
+    ul li span {
+        width: 30px; /* Reduz o tamanho do ícone de exclusão */
+        height: 30px;
+        font-size: 18px; /* Reduz o tamanho da fonte do ícone de exclusão */
+    }
+}
+
+  .footer {
+  text-align: center; /* Centralizar o texto */
+  padding: 0.6rem 0; /* Espaçamento interno para melhor visualização */
+  background-color: #f9f9f9; /* Cor de fundo do rodapé */
+  position: absolute; /* Posicionamento absoluto */
+  bottom: 0; /* Alinhar no final da página */
+  width: 100%; /* Largura total da página */
+  font-size: 1rem; /* Tamanho da fonte */
+}
+
+@media screen and (max-width: 768px) {
+    /* Ajuste o padding do .footer para torná-lo mais fino */
+    .footer {
+        padding: 0.3rem 0;
+        font-size: 0.9rem;
+    }
+
+    /* Ajuste o tamanho da fonte do .todo-app h2 para telas menores */
+    .todo-app h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Ajuste o tamanho da imagem do .todo-app h2 para telas menores */
+    .todo-app h2 img {
+        width: 20px;
+    }
+
+    /* Ajuste o padding do .row para telas menores */
+    .row {
+        padding-left: 10px;
+    }
+
+    /* Ajuste o padding do input para telas menores */
+    input {
+        padding: 8px;
+    }
+
+    /* Ajuste o padding do botão para telas menores */
+    button {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+}
+
