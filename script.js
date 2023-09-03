@@ -47,10 +47,11 @@ function showTask() {
         // Se o localStorage estiver vazio, adicione as tarefas padrão com a opção de exclusão
         listContainer.innerHTML = `
             <li>Documento de Identificação <span class="delete">&#x00D7;</span></li>
-            <li>Comprovante de residência (prazo de 90 dias)<br> ou conforme descrito no Fluid <span class="delete">&#x00D7;</span></li>
+            <li>Comprovante de residência (prazo de 90 dias)<br> ou conforme descrito no fluid <span class="delete">&#x00D7;</span></li>
             <li>Comprovante de renda (prazo de 60 dias) ou presumida/informada<span class="delete">&#x00D7;</span></li>
-            <li>Imposto de renda - somente sendo referente a 2022/2023<span class="delete">&#x00D7;</span></li>
+            <li>Capital social padrão (20,00) ou conforme socilitado<span class="delete">&#x00D7;</span></li>
             <li>Conferência de dados, valores de crédito e <br> cheque antes de efetivação<span class="delete">&#x00D7;</span></li>
+            <li>Imposto de renda - somente sendo referente a 2022/2023<span class="delete">&#x00D7;</span></li>
         `;
 
         // Adicione eventos de clique para exclusão às tarefas padrão
