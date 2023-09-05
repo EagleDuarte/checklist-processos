@@ -52,6 +52,8 @@ function showTask() {
             <li>Capital social padrão (20,00) ou conforme socilitado<span class="delete">&#x00D7;</span></li>
             <li>Conferência de dados, valores de crédito e <br> cheque antes de efetivação<span class="delete">&#x00D7;</span></li>
             <li>Imposto de renda - somente sendo referente a 2022/2023<span class="delete">&#x00D7;</span></li>
+            <li>Conferir se a conta está na agência correta<span class="delete">&#x00D7;</span></li>
+            <li>Conferir se há cheque especial, conta salário ou débito automático<span class="delete">&#x00D7;</span></li>
         `;
 
         // Adicione eventos de clique para exclusão às tarefas padrão
